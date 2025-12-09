@@ -23,4 +23,4 @@ const AsignaturaSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Asignaturas", AsignaturaSchema);
+export default mongoose.model("asignaturas", AsignaturaSchema);

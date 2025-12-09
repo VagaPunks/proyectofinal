@@ -27,4 +27,4 @@ const consultaSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Consultas", consultaSchema);
+export default mongoose.model("consultas", consultaSchema);

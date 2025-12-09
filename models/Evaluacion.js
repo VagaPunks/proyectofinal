@@ -29,4 +29,4 @@ const evaluacionSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Evaluaciones", evaluacionSchema);
+export default mongoose.model("evaluaciones", evaluacionSchema);
