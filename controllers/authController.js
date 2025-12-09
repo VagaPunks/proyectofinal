@@ -32,7 +32,7 @@ export const login = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       secure: false, // cambiar a true en producción con HTTPS
-  sameSite: "None",  // Necesario para solicitudes cross-origin
+  sameSite: "lax",  // Necesario para solicitudes cross-origin
   maxAge: 3600000,  // 1 hora de expiración
     });
 
