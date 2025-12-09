@@ -25,12 +25,15 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Configurar cors con credenciales para Cookies HttpOnly
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL,
-    credentials: true,
-  })
-);
+app.use(cors({
+    origin: [
+        'http://localhost:5173', // tu frontend con Vite
+        'http://127.0.0.1:5501', // Live Server u otros
+        'https://TU_FRONTEND_PUBLICO.onrender.com' // producción en Render
+    ],
+    credentials: true
+}));
+
 
 // Rutas
 app.use("/api/auth", authRoutes);
