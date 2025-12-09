@@ -33,6 +33,8 @@ export const login = async (req, res) => {
       httpOnly: true,
       secure: false, // cambiar a true en producción con HTTPS
       sameSite: "strict",
+  sameSite: "None",  // Necesario para solicitudes cross-origin
+  maxAge: 3600000,  // 1 hora de expiración
     });
 
     return res.json({
