@@ -29,7 +29,7 @@ app.use(cors({
     origin: [
         'http://localhost:5501', // tu frontend con Vite
         'http://127.0.0.1:5501', // Live Server u otros
-        'https://TU_FRONTEND_PUBLICO.onrender.com' // producción en Render
+        'https://proyectofinalfront-z1o8.onrender.com/' // producción en Render
     ],
     credentials: true
 }));
